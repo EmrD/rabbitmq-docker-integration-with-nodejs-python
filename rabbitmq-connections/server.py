@@ -1,3 +1,5 @@
+#server.py
+
 import docker
 import pika
 import os
@@ -69,7 +71,7 @@ def callback(ch, method, properties, body):
             exchange='',
             routing_key=properties.reply_to,
             properties=pika.BasicProperties(
-                correlation_id=properties.correlation_id  # correlationId ile yanıt gönder
+                correlation_id=properties.correlation_id 
             ),
             body="gotit"
         )

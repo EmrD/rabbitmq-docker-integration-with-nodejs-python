@@ -1,8 +1,16 @@
-sudo service rabbitmq-server start
-sudo service rabbitmq-server stop
+# RabbitMQ Docker Integration With NodeJS And Python
+This is an example project to show how make an queue of requests with RabbitMQ on NodeJS and run specify commands on Docker container with Python.
 
-node index.js
+## Getting Started
 
-python server.py
+Start RabbitMQ; 
 
-TODO: 2. client tarafta Sunucu docker container'ini kurdu. mesajı ve görev id kısımları yok. 
+`sudo service rabbitmq-server start`
+
+Start NodeJS server; 
+
+`node index.js`
+
+Start Python file to open Docker containers and run the specify python files on container.
+
+`python server.py`
