@@ -11,6 +11,6 @@ Start NodeJS server;
 
 `node index.js`
 
-Start Python file to open Docker containers and run the specify python files on container.
+Start Python file to open Docker containers and run the specify Python files on container.
 
 `python server.py`
